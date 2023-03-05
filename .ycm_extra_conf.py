@@ -16,12 +16,12 @@
 #                                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-def FlagsForFile( filename, **kwargs ):
-  return {
-      'flags': [
-          '-x', 'c++',
-          '-std=c++1y',
-          '-Wall',
-          '-Werror',
-      ],
-  }
+def FlagsForFile(filename, **kwargs):
+    return {
+        'flags': [
+            '-x', 'c++',
+            '-std=c++20',
+            '-Wall',
+            '-Werror',
+        ],
+    }
