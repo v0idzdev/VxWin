@@ -1,14 +1,16 @@
 Basic Window Manager
 ====================
 
-basic_wm is a simple reparenting, non-compositing X window manager that demonstrates
+vx_win is a fork of basic_wm, created by [Chuan Ji](https://github.com/jichu4n) a.k.a. `@jichu4n)`. 
+
+vx_win is a simple reparenting, non-compositing X window manager that demonstrates
 how to implement the fundamental functionality of a window manager:
 
   * Managing the life cycle of windows
   * Reparenting windows
   * Basic window operations (moving, resizing, closing)
 
-It serves as a pedagogical example for my series of articles,
+basic_vm serves as an example for his series of articles,
 [_How X Window Managers Work, And How To Write One_](https://jichu4n.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i/).
 
 
@@ -17,8 +19,8 @@ Building and Running
 
 To build this example window manager, you will need:
 
-* A C++-11 enabled C++ compiler
-* [GNU Make](https://www.gnu.org/software/make/)
+* A C++-20 enabled C++ compiler
+* [CMake](https://cmake.org/)
 * Xlib headers and libraries
 * [google-glog](https://code.google.com/p/google-glog/) library
 
@@ -53,7 +55,8 @@ Once you have all the dependencies, building and running it is as simple as:
     ./build_and_run.sh
 
 This will launch a simple Xephyr session like in the following screenshot:
-![Screenshot](basic_wm_screenshot.png)
+
+![Screenshot](vx_win_screenshot.png)
 
 
 Usage
