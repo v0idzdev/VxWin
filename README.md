@@ -10,7 +10,7 @@ how to implement the fundamental functionality of a window manager:
   * Reparenting windows
   * Basic window operations (moving, resizing, closing)
 
-basic_vm serves as an example for his series of articles,
+basic_wm serves as an example for his series of articles,
 [_How X Window Managers Work, And How To Write One_](https://jichu4n.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i/).
 
 
