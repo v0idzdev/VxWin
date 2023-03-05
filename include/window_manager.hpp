@@ -19,30 +19,32 @@
 #ifndef WINDOW_MANAGER_HPP
 #define WINDOW_MANAGER_HPP
 
-extern "C" {
+extern "C"
+{
 #include <X11/Xlib.h>
 }
+#include "util.hpp"
 #include <memory>
 #include <mutex>
 #include <string>
 #include <unordered_map>
-#include "util.hpp"
 
 // Implementation of a window manager for an X screen.
-class WindowManager {
- public:
+class WindowManager
+{
+public:
   // Creates a WindowManager instance for the X display/screen specified by the
   // argument string, or if unspecified, the DISPLAY environment variable. On
   // failure, returns nullptr.
-   static ::std::unique_ptr<WindowManager> Create(
-      const std::string& display_str = std::string());
+  static ::std::unique_ptr<WindowManager> Create(
+    const std::string& display_str = std::string());
 
   ~WindowManager();
 
   // The entry point to this class. Enters the main event loop.
   void Run();
 
- private:
+private:
   // Invoked internally by Create().
   WindowManager(Display* display);
   // Frames a top-level window.
